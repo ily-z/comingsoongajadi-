@@ -1,0 +1,24 @@
+# Generic static host (Netlify / any host serving dist/).
+# Publish directory: dist
+# Build command: npm run build
+
+[build]
+  publish = "dist"
+  command = "npm run build"
+
+[[headers]]
+  for = "/assets/index-*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800, must-revalidate"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "DENY"
+    Referrer-Policy = "strict-origin-when-cross-origin"

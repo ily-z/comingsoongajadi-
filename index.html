@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#070A12" />
+    <title>UTM TV — Segera Hadir</title>
+    <meta
+      name="description"
+      content="UTM TV sedang bersiap. Something worth watching is on the way."
+    />
+    <meta property="og:title" content="UTM TV — Segera Hadir" />
+    <meta
+      property="og:description"
+      content="Something worth watching is on the way."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="./assets/logo.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="UTM TV — Segera Hadir" />
+    <meta
+      name="twitter:description"
+      content="Something worth watching is on the way."
+    />
+    <meta name="twitter:image" content="./assets/logo.png" />
+    <meta name="robots" content="index, follow" />
+    <link rel="icon" type="image/png" href="./assets/logo.png" />
+  </head>
+  <body>
+    <div class="stage">
+      <canvas class="stage__canvas" aria-hidden="true"></canvas>
+      <div class="sweep" aria-hidden="true"></div>
+      <div class="noise" aria-hidden="true"></div>
+      <div class="vignette" aria-hidden="true"></div>
+    </div>
+
+    <main class="hero">
+      <h1 class="visually-hidden">UTM TV — Segera Hadir</h1>
+
+      <p class="hero__eyebrow" data-anim="fade">UTM TV</p>
+
+      <div class="hero__headline">
+        <div class="headline">
+          <span class="headline__scramble" aria-hidden="true"></span>
+          <span class="headline__text" data-anim="headline"></span>
+        </div>
+      </div>
+
+      <div class="hero__rule" aria-hidden="true"></div>
+
+      <p class="hero__tagline" data-anim="fade">Something worth watching is on the way.</p>
+    </main>
+
+    <div class="loader" role="status" aria-live="polite">
+      <div class="loader__inner">
+        <p class="loader__label">LOADING</p>
+        <div class="loader__bar">
+          <span class="loader__fill"></span>
+        </div>
+        <p class="loader__pct">0%</p>
+      </div>
+    </div>
+
+    <noscript>
+      <p style="color: #fff; text-align: center; padding: 2rem">
+        JavaScript is required to view this page.
+      </p>
+    </noscript>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
